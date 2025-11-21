@@ -5,7 +5,7 @@ const projectsData = [
     title: "CV Dynamique",
     description: "Application web permettant de créer des CV dynamiques via un formulaire interactif. Développée pour l'association Entreprendre Ensemble lors de mon stage chez AKKODIS.",
     technologies: ["React", "Java", "Spring Boot", "PostgreSQL"],
-    image: "/entreprendreensemble.png", // Image du projet
+    image: "entreprendreensemble.png", // Image du projet
     isImage: true,
     github: null, // Projet privé (entreprise)
     isPrivate: true,
@@ -16,7 +16,7 @@ const projectsData = [
     title: "Materlait",
     description: "Application de gestion pour une entreprise laitière. Interface moderne avec tableau de bord et gestion des données métier.",
     technologies: ["React", "Java", "Spring Boot", "MySQL"],
-    image: "/materlait.png", // Image du projet
+    image: "materlait.png", // Image du projet
     isImage: true,
     github: null, // Projet privé (entreprise)
     isPrivate: true,
@@ -77,7 +77,7 @@ function ProjectCard({ project }) {
         {project.isImage ? (
           <div className="w-full h-full p-6 flex items-center justify-center z-10">
             <img
-              src={project.image}
+              src={`${import.meta.env.BASE_URL}${project.image}`}
               alt={project.title}
               className="max-w-full max-h-full object-contain rounded-lg group-hover:scale-105 transition-all duration-500 shadow-lg"
             />

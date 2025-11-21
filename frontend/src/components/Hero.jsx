@@ -9,8 +9,8 @@ function Hero({ scrollToSection }) {
             <div className="relative">
               {/* Profile Circle with REAL IMAGE */}
               <div className="w-80 h-80 md:w-[450px] md:h-[450px] rounded-full bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center overflow-hidden border-2 border-cyan-500/30 shadow-2xl shadow-cyan-500/20">
-                <img 
-                  src="/maxence.png" 
+                <img
+                  src={`${import.meta.env.BASE_URL}maxence.png`}
                   alt="Maxence Feriau" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />

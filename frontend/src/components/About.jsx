@@ -18,9 +18,9 @@ function About() {
           <div className="lg:col-span-1">
             <div className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/30 rounded-3xl p-8 text-center sticky top-24">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-500/20 to-teal-500/20 overflow-hidden border-2 border-cyan-500/30">
-                <img 
-                  src="/maxence.png" 
-                  alt="Maxence Feriau" 
+                <img
+                  src={`${import.meta.env.BASE_URL}maxence.png`}
+                  alt="Maxence Feriau"
                   className="w-full h-full object-cover"
                 />
               </div>

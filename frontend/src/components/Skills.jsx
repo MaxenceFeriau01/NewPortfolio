@@ -52,7 +52,7 @@ const skillsData = {
       { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
       { name: "IntelliJ", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
       { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
-      { name: "Claude AI", logo: "/claude-ai.svg" },
+      { name: "Claude AI", logo: "claude-ai.svg" },
     ]
   }
 }
@@ -65,7 +65,7 @@ function SkillCardCyan({ skill }) {
         {/* Logo */}
         <div className="w-12 h-12 mx-auto mb-3 relative">
           <img
-            src={skill.logo}
+            src={skill.logo.startsWith('http') ? skill.logo : `${import.meta.env.BASE_URL}${skill.logo}`}
             alt={skill.name}
             className="w-full h-full object-contain filter group-hover:drop-shadow-lg transition-all duration-300"
           />
@@ -96,7 +96,7 @@ function SkillCardTeal({ skill }) {
         {/* Logo */}
         <div className="w-12 h-12 mx-auto mb-3 relative">
           <img
-            src={skill.logo}
+            src={skill.logo.startsWith('http') ? skill.logo : `${import.meta.env.BASE_URL}${skill.logo}`}
             alt={skill.name}
             className="w-full h-full object-contain filter group-hover:drop-shadow-lg transition-all duration-300"
           />

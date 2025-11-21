@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 
 // Import des composants
 import Navigation from './components/Navigation'
@@ -13,21 +12,7 @@ import Footer from './components/Footer'
 import Terminal from './components/Terminal'
 
 function App() {
-  const [projects, setProjects] = useState([])
-  const [loading, setLoading] = useState(true)
   const [terminalMode, setTerminalMode] = useState(false)
-
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/projects')
-      .then(response => {
-        setProjects(response.data)
-        setLoading(false)
-      })
-      .catch(error => {
-        console.error('Erreur:', error)
-        setLoading(false)
-      })
-  }, [])
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -72,7 +57,7 @@ function App() {
           <Hero scrollToSection={scrollToSection} />
           <About />
           <Skills />
-          <Projects projects={projects} loading={loading} />
+          <Projects />
           <Contact />
           <Footer />
         </>

@@ -4,7 +4,7 @@ const portfolioData = {
   root: {
     name: 'MaxenceFeriau',
     type: 'directory',
-    description: 'Portfolio de Maxence Feriau - Développeur Full-Stack',
+    description: 'Portfolio de Maxence Feriau - Développeur Concepteur Web & Mobile',
     children: {
       'Accueil': {
         name: 'Accueil',
@@ -13,18 +13,23 @@ const portfolioData = {
         content: `
 ╔════════════════════════════════════════════════════════════╗
 ║                    MAXENCE FERIAU                          ║
-║              Développeur Full-Stack                        ║
+║        Développeur Concepteur Web & Mobile                 ║
 ╚════════════════════════════════════════════════════════════╝
 
-Je suis développeur full-stack et concepteur d'applications.
-Passionné par les technologies web et en constante évolution
-vers le DevOps.
+"Transformer les idées en applications performantes,
+ une ligne de code à la fois."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💼 8 mois d'expérience chez AKKODIS France
-🎓 2 Diplômes obtenus
-🚀 Future formation DevOps
+🎓 2 Diplômes : DWWM + CDA
+🚀 En évolution vers le DevOps
+🤖 Passionné par l'IA et l'automatisation
 
-Tapez 'cd ..' pour revenir, ou 'cd [dossier]' pour naviguer.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tapez 'ls' pour explorer mon portfolio
+ou 'Get-Help' pour voir toutes les commandes.
         `
       },
       'APropos': {
@@ -38,24 +43,26 @@ Tapez 'cd ..' pour revenir, ou 'cd [dossier]' pour naviguer.
 
 📖 MON HISTOIRE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Passionné par le développement web depuis toujours, j'ai
+Passionné par le développement depuis toujours, j'ai
 construit mon expertise à travers une formation complète et
 une expérience professionnelle enrichissante.
 
 💼 EXPÉRIENCE PROFESSIONNELLE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 AKKODIS France - Développeur Web (Stage de 8 mois)
-Développement d'applications web complètes en environnement
-professionnel. Travail en équipe avec méthodologies agiles.
+• Développement d'applications web complètes
+• Travail en équipe avec méthodologies agiles
+• Projets : CV Dynamique, Materlait
 
 🎓 DIPLÔMES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✓ Développeur Web et Web Mobile
-✓ Concepteur Développeur d'Applications
+✓ Développeur Web et Web Mobile (DWWM)
+✓ Concepteur Développeur d'Applications (CDA)
 
 🎯 OBJECTIF : Formation DevOps
-Maîtriser l'automatisation CI/CD, Kubernetes,
-Infrastructure as Code
+• CI/CD & Automatisation
+• Kubernetes & Orchestration
+• Infrastructure as Code
         `
       },
       'Competences': {
@@ -72,14 +79,14 @@ Infrastructure as Code
 ║                  COMPÉTENCES FRONTEND                      ║
 ╚════════════════════════════════════════════════════════════╝
 
-✓ React
-✓ Vue.js
-✓ Next.js
-✓ JavaScript
-✓ TypeScript
-✓ HTML5/CSS3
-✓ Tailwind CSS
-✓ Bootstrap
+✓ React          Framework principal
+✓ Vue.js         Applications réactives
+✓ Next.js        SSR & SSG
+✓ JavaScript     ES6+
+✓ TypeScript     Typage statique
+✓ HTML5/CSS3     Standards web
+✓ Tailwind CSS   Utility-first CSS
+✓ Bootstrap      Framework CSS
             `
           },
           'Backend': {
@@ -91,13 +98,13 @@ Infrastructure as Code
 ║                  COMPÉTENCES BACKEND                       ║
 ╚════════════════════════════════════════════════════════════╝
 
-✓ Node.js
-✓ Express
-✓ Java
-✓ Spring Boot
-✓ Maven
-✓ REST API
-✓ GraphQL
+✓ Node.js        Runtime JavaScript
+✓ Express        Framework Node.js
+✓ Java           Langage robuste
+✓ Spring Boot    Framework Java
+✓ PHP            Scripting serveur
+✓ Symfony        Framework PHP
+✓ Maven          Gestion de projet Java
             `
           },
           'Database': {
@@ -109,11 +116,10 @@ Infrastructure as Code
 ║                  BASES DE DONNÉES                          ║
 ╚════════════════════════════════════════════════════════════╝
 
-✓ MongoDB
-✓ PostgreSQL
-✓ MySQL
-✓ Redis
-✓ Firebase
+✓ MongoDB        NoSQL Document
+✓ PostgreSQL     SQL avancé
+✓ MySQL          SQL classique
+✓ DBeaver        Client universel
             `
           },
           'DevOps': {
@@ -125,13 +131,24 @@ Infrastructure as Code
 ║                  DEVOPS & OUTILS                           ║
 ╚════════════════════════════════════════════════════════════╝
 
-✓ Docker
-✓ Proxmox
-✓ Git/GitHub
-✓ Postman
-✓ VS Code
-✓ IntelliJ IDEA
-✓ CI/CD
+CONTAINERISATION & VIRTUALISATION
+✓ Docker         Containers
+✓ Portainer      Gestion Docker
+✓ Proxmox        Virtualisation
+
+VERSIONING & CI/CD
+✓ Git            Versioning
+✓ GitHub         Collaboration
+✓ Azure DevOps   CI/CD pipelines
+
+OUTILS DE DÉVELOPPEMENT
+✓ VS Code        IDE principal
+✓ IntelliJ IDEA  IDE Java
+✓ Postman        Tests API
+✓ Linux          Administration système
+
+INTELLIGENCE ARTIFICIELLE
+✓ Claude AI      Assistant IA
             `
           }
         }
@@ -145,11 +162,37 @@ Infrastructure as Code
 ║                    MES PROJETS                             ║
 ╚════════════════════════════════════════════════════════════╝
 
-Les projets sont chargés depuis l'API...
-Tapez 'cd ..' pour revenir au menu principal.
+🔒 CV DYNAMIQUE                          [Stage AKKODIS]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Application de création de CV dynamiques via formulaire
+pour l'association Entreprendre Ensemble.
+Stack : React • Java • Spring Boot • PostgreSQL
 
-💡 Astuce : Utilisez le mode classique pour voir les projets
-   en détail avec leurs images et technologies !
+🔒 MATERLAIT                             [Stage AKKODIS]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Application de gestion pour entreprise laitière.
+Interface moderne avec tableau de bord.
+Stack : React • Java • Spring Boot • MySQL
+
+🍳 CUISINE PARTAGÉE                      [Projet Personnel]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Application mobile de partage de recettes.
+Stack : React Native • Express • Node.js • MongoDB
+
+🏍️ MOTORHEAD                            [Projet Formation]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Site vitrine pour entreprise automobile.
+Stack : React • PHP • MySQL • Tailwind CSS
+
+🎮 GAMEZONE                              [Projet Formation]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Site vitrine jeux vidéo avec système de notation.
+Stack : Angular • PHP • MySQL • Bootstrap
+
+💼 PORTFOLIO                             [Projet Personnel]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Ce portfolio avec terminal interactif PowerShell !
+Stack : React • Node.js • Tailwind CSS • Express
         `
       },
       'Contact': {
@@ -161,20 +204,21 @@ Tapez 'cd ..' pour revenir au menu principal.
 ║                    CONTACT                                 ║
 ╚════════════════════════════════════════════════════════════╝
 
-📧 Email
-   maxence.feriau@example.com
+📧 EMAIL
+   maxence.feriau@gmail.com
 
-💻 GitHub
-   github.com/maxenceferiau
+💻 GITHUB
+   github.com/MaxenceFeriau01
 
-💼 LinkedIn
-   linkedin.com/in/maxenceferiau
-
-📄 CV
-   Disponible en téléchargement
+💼 LINKEDIN
+   linkedin.com/in/maxence-feriau-a7090a336
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Intéressé par mon profil ? N'hésitez pas à me contacter !
+
+💡 Astuce : Utilisez le bouton "Mode Classique" en haut
+   pour voir le portfolio avec interface graphique.
         `
       }
     }
@@ -187,7 +231,6 @@ function Terminal() {
   const [input, setInput] = useState('')
   const [commandHistory, setCommandHistory] = useState([])
   const [historyIndex, setHistoryIndex] = useState(-1)
-  const [suggestions, setSuggestions] = useState([])
   const inputRef = useRef(null)
   const terminalRef = useRef(null)
 
@@ -195,12 +238,19 @@ function Terminal() {
     // Message de bienvenue
     setHistory([
       { type: 'system', content: '╔════════════════════════════════════════════════════════════╗' },
-      { type: 'system', content: '║   PowerShell Portfolio - Maxence Feriau v1.0              ║' },
+      { type: 'system', content: '║   PowerShell Portfolio - Maxence Feriau v2.0              ║' },
+      { type: 'system', content: '║   Développeur Concepteur Web & Mobile                     ║' },
       { type: 'system', content: '╚════════════════════════════════════════════════════════════╝' },
       { type: 'system', content: '' },
-      { type: 'info', content: 'Bienvenue dans mon portfolio interactif !' },
-      { type: 'info', content: 'Tapez "Get-Help" pour voir toutes les commandes disponibles.' },
-      { type: 'info', content: 'Utilisez "ls" pour lister le contenu et "cd [nom]" pour naviguer.' },
+      { type: 'info', content: '"Transformer les idées en applications performantes."' },
+      { type: 'system', content: '' },
+      { type: 'output', content: 'Bienvenue dans mon portfolio interactif !' },
+      { type: 'output', content: '' },
+      { type: 'output', content: 'Commandes rapides :' },
+      { type: 'output', content: '  ls           → Voir les sections disponibles' },
+      { type: 'output', content: '  cd Projets   → Voir mes projets' },
+      { type: 'output', content: '  whoami       → En savoir plus sur moi' },
+      { type: 'output', content: '  Get-Help     → Toutes les commandes' },
       { type: 'system', content: '' }
     ])
     inputRef.current?.focus()
@@ -364,7 +414,6 @@ INFORMATIONS
 ASTUCES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↑ ↓              Parcourir l'historique des commandes
-  Tab              Autocomplétion (bientôt disponible)
 
 Commencez par 'ls' pour voir les sections disponibles !
     `
@@ -375,23 +424,32 @@ Commencez par 'ls' pour voir les sections disponibles !
     const whoamiText = `
 ╔════════════════════════════════════════════════════════════╗
 ║                    MAXENCE FERIAU                          ║
+║          Développeur Concepteur Web & Mobile               ║
 ╚════════════════════════════════════════════════════════════╝
 
-Développeur Full-Stack & Futur DevOps Engineer
+📍 Localisation   France
+💼 Expérience     8 mois chez AKKODIS France
+🎓 Diplômes       DWWM + Concepteur Développeur d'Applications
+🚀 Objectif       Formation DevOps
 
-📍 Localisation : France
-💼 Expérience : 8 mois chez AKKODIS
-🎓 Diplômes : Développeur Web + Concepteur Développeur
-🚀 Objectif : Formation DevOps
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STACK TECHNIQUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Stack principale :
-  Frontend  → React, Vue.js, Next.js, TypeScript
-  Backend   → Node.js, Java, Spring Boot
-  Database  → MongoDB, PostgreSQL, MySQL
-  DevOps    → Docker, Proxmox, Git, CI/CD
+Frontend   React • Vue.js • Next.js • TypeScript • Tailwind
+Backend    Node.js • Java • Spring Boot • PHP • Symfony
+Database   MongoDB • PostgreSQL • MySQL
+DevOps     Docker • Portainer • Proxmox • Git • Azure DevOps
+Tools      VS Code • IntelliJ • Postman • Claude AI
 
-"Passionné par la création d'applications web modernes
- et l'automatisation des processus de développement."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"Passionné par la création d'applications web et mobile,
+ et l'utilisation de l'IA pour booster la productivité."
+
+📧 maxence.feriau@gmail.com
+💻 github.com/MaxenceFeriau01
+💼 linkedin.com/in/maxence-feriau-a7090a336
     `
     setHistory(prev => [...prev, { type: 'info', content: whoamiText }])
   }
@@ -491,7 +549,7 @@ Stack principale :
 
       {/* Bottom Help Bar */}
       <div className="bg-[#001a3d] border-t border-cyan-500/30 px-6 py-2 text-xs text-gray-400 flex justify-between">
-        <span>PowerShell Portfolio v1.0 - Maxence Feriau</span>
+        <span>PowerShell Portfolio v2.0 - Maxence Feriau</span>
         <span>Tapez "Get-Help" pour l'aide • ↑↓ Historique</span>
       </div>
     </div>

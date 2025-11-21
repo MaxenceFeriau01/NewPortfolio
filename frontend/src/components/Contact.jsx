@@ -10,12 +10,12 @@ function Contact() {
             Restons en Contact
           </h2>
           <p className="text-gray-400 text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
-            Intéressé par mon profil ? Une question sur mes projets ? N'hésitez pas à me contacter !
+            Interessé par mon profil ? Une question sur mes projets ? N'hésitez pas à me contacter !
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="mailto:maxence.feriau@example.com"
+              href="mailto:maxence.feriau@gmail.com"
               className="flex items-center gap-3 bg-cyan-500/10 border-2 border-cyan-500/30 hover:border-cyan-400 hover:bg-cyan-500/20 px-8 py-5 rounded-full text-cyan-400 font-semibold transition-all text-lg hover:scale-105"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,7 +25,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://github.com/maxenceferiau"
+              href="https://github.com/MaxenceFeriau01"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-cyan-500/10 border-2 border-cyan-500/30 hover:border-cyan-400 hover:bg-cyan-500/20 px-8 py-5 rounded-full text-cyan-400 font-semibold transition-all text-lg hover:scale-105"
@@ -37,7 +37,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/maxenceferiau"
+              href="https://www.linkedin.com/in/maxence-feriau-a7090a336"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 px-8 py-5 rounded-full text-white font-semibold transition-all text-lg shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:scale-105"
@@ -46,20 +46,6 @@ function Contact() {
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
               LinkedIn
-            </a>
-          </div>
-
-          {/* Download CV */}
-          <div className="pt-8 border-t border-cyan-500/10">
-            <a
-              href="/cv-maxence-feriau.pdf"
-              download
-              className="inline-flex items-center gap-3 text-gray-400 hover:text-cyan-400 transition font-medium"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Télécharger mon CV
             </a>
           </div>
         </div>

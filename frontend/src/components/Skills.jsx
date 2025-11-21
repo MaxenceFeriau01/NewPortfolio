@@ -42,6 +42,8 @@ const skillsData = {
     color: "teal",
     skills: [
       { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "Portainer", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg" },
+      { name: "Proxmox", logo: "https://www.proxmox.com/images/proxmox/Proxmox_symbol_standard_hex.png" },
       { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
       { name: "Azure DevOps", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" },

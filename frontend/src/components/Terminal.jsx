@@ -225,8 +225,27 @@ Intéressé par mon profil ? N'hésitez pas à me contacter !
   }
 }
 
+// Message de bienvenue initial
+const initialHistory = [
+  { type: 'system', content: '╔════════════════════════════════════════════════════════════╗' },
+  { type: 'system', content: '║   PowerShell Portfolio - Maxence Feriau v2.0              ║' },
+  { type: 'system', content: '║   Développeur Concepteur Web & Mobile                     ║' },
+  { type: 'system', content: '╚════════════════════════════════════════════════════════════╝' },
+  { type: 'system', content: '' },
+  { type: 'info', content: '"Transformer les idées en applications performantes."' },
+  { type: 'system', content: '' },
+  { type: 'output', content: 'Bienvenue dans mon portfolio interactif !' },
+  { type: 'output', content: '' },
+  { type: 'output', content: 'Commandes rapides :' },
+  { type: 'output', content: '  ls           → Voir les sections disponibles' },
+  { type: 'output', content: '  cd Projets   → Voir mes projets' },
+  { type: 'output', content: '  whoami       → En savoir plus sur moi' },
+  { type: 'output', content: '  Get-Help     → Toutes les commandes' },
+  { type: 'system', content: '' }
+]
+
 function Terminal() {
-  const [history, setHistory] = useState([])
+  const [history, setHistory] = useState(initialHistory)
   const [currentPath, setCurrentPath] = useState(['MaxenceFeriau'])
   const [input, setInput] = useState('')
   const [commandHistory, setCommandHistory] = useState([])
@@ -236,24 +255,7 @@ function Terminal() {
   const bottomRef = useRef(null)
 
   useEffect(() => {
-    // Message de bienvenue
-    setHistory([
-      { type: 'system', content: '╔════════════════════════════════════════════════════════════╗' },
-      { type: 'system', content: '║   PowerShell Portfolio - Maxence Feriau v2.0              ║' },
-      { type: 'system', content: '║   Développeur Concepteur Web & Mobile                     ║' },
-      { type: 'system', content: '╚════════════════════════════════════════════════════════════╝' },
-      { type: 'system', content: '' },
-      { type: 'info', content: '"Transformer les idées en applications performantes."' },
-      { type: 'system', content: '' },
-      { type: 'output', content: 'Bienvenue dans mon portfolio interactif !' },
-      { type: 'output', content: '' },
-      { type: 'output', content: 'Commandes rapides :' },
-      { type: 'output', content: '  ls           → Voir les sections disponibles' },
-      { type: 'output', content: '  cd Projets   → Voir mes projets' },
-      { type: 'output', content: '  whoami       → En savoir plus sur moi' },
-      { type: 'output', content: '  Get-Help     → Toutes les commandes' },
-      { type: 'system', content: '' }
-    ])
+    // Focus sur l'input au montage
     inputRef.current?.focus()
   }, [])
 

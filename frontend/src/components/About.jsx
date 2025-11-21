@@ -116,13 +116,13 @@ function About() {
             <div className="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 border border-cyan-500/30 rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
                 <span className="text-cyan-400">🎯</span>
-                Prochaine Étape : DevOps
+                Prochaine Étape : DevOps & Sécurité
               </h3>
               <p className="text-gray-400 leading-relaxed text-lg mb-4">
                 Après avoir exploré les bases du DevOps avec Docker, la gestion de serveurs Proxmox et les outils d'automatisation, je me prépare à suivre une <span className="text-white font-semibold">formation DevOps complète</span>.
               </p>
               <p className="text-gray-400 leading-relaxed text-lg">
-                Mon objectif : maîtriser l'automatisation CI/CD, l'orchestration avec Kubernetes, l'infrastructure as code et devenir un professionnel polyvalent capable de gérer l'ensemble du cycle de vie des applications modernes.
+                Mon objectif : maîtriser l'automatisation CI/CD, l'orchestration avec Kubernetes, l'infrastructure as code, ainsi que les <span className="text-white font-semibold">bonnes pratiques de sécurité</span> (DevSecOps) pour devenir un professionnel polyvalent capable de gérer l'ensemble du cycle de vie des applications modernes de manière sécurisée.
               </p>
             </div>
           </div>

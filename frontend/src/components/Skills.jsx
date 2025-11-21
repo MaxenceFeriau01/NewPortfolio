@@ -189,7 +189,7 @@ function Skills() {
             Stack Technique
           </h2>
           <p className="text-gray-400 text-xl max-w-2xl mx-auto">
-            Les technologies et outils que je maîtrise pour créer des applications modernes
+            Les technologies et outils avec lesquels je travaille au quotidien
           </p>
         </div>
 

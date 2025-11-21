@@ -233,6 +233,7 @@ function Terminal() {
   const [historyIndex, setHistoryIndex] = useState(-1)
   const inputRef = useRef(null)
   const terminalRef = useRef(null)
+  const bottomRef = useRef(null)
 
   useEffect(() => {
     // Message de bienvenue
@@ -258,8 +259,8 @@ function Terminal() {
 
   useEffect(() => {
     // Auto-scroll vers le bas
-    if (terminalRef.current) {
-      terminalRef.current.scrollTop = terminalRef.current.scrollHeight
+    if (bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: 'smooth' })
     }
   }, [history])
 
@@ -545,6 +546,8 @@ Tools      VS Code • IntelliJ • Postman • Claude AI
             spellCheck={false}
           />
         </div>
+        {/* Ref pour auto-scroll */}
+        <div ref={bottomRef} />
       </div>
 
       {/* Bottom Help Bar */}

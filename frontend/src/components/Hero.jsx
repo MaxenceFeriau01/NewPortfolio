@@ -37,9 +37,9 @@ function Hero({ scrollToSection }) {
             </p>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-8">
-              Création d'applications{' '}
+              Concepteur Développeur{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">
-                web & mobile
+                d'applications web & mobile
               </span>
             </h1>
 

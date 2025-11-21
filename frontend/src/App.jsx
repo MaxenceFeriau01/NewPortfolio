@@ -23,10 +23,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#0a1628] text-white relative">
-      {/* Toggle Button - Fixed Position */}
+      {/* Toggle Button - Fixed Position Center */}
       <button
         onClick={() => setTerminalMode(!terminalMode)}
-        className="fixed top-24 right-6 z-[100] flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 px-6 py-3 rounded-full text-white font-semibold shadow-xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all hover:scale-105 border-2 border-cyan-400/30"
+        className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 px-6 py-3 rounded-full text-white font-semibold shadow-xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all hover:scale-105 border-2 border-cyan-400/30"
       >
         {terminalMode ? (
           <>

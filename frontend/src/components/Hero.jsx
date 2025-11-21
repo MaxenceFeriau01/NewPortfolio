@@ -37,14 +37,14 @@ function Hero({ scrollToSection }) {
             </p>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-8">
-              Création d'applications web{' '}
+              Création d'applications{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">
-                modernes
+                web & mobile
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-400 leading-relaxed mb-10 max-w-2xl">
-              Je suis <span className="text-white font-semibold">Maxence Feriau</span>, développeur full-stack et concepteur d'applications. Passionné par les technologies web et en constante évolution vers le DevOps.
+              Je suis <span className="text-white font-semibold">Maxence Feriau</span>, développeur concepteur d'applications web et mobile. Passionné par les nouvelles technologies et en constante évolution vers le DevOps.
             </p>
 
             {/* CTA Buttons */}

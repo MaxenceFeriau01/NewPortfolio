@@ -5,7 +5,8 @@ const projectsData = [
     title: "CV Dynamique",
     description: "Application web permettant de créer des CV dynamiques via un formulaire interactif. Développée pour l'association Entreprendre Ensemble lors de mon stage chez AKKODIS.",
     technologies: ["React", "Java", "Spring Boot", "PostgreSQL"],
-    image: "📄",
+    image: "/entreprendreensemble.png", // Image du projet
+    isImage: true,
     github: null, // Projet privé (entreprise)
     isPrivate: true,
     context: "Stage AKKODIS"
@@ -15,7 +16,8 @@ const projectsData = [
     title: "Materlait",
     description: "Application de gestion pour une entreprise laitière. Interface moderne avec tableau de bord et gestion des données métier.",
     technologies: ["React", "Java", "Spring Boot", "MySQL"],
-    image: "🥛",
+    image: "/materlait.png", // Image du projet
+    isImage: true,
     github: "https://github.com/MaxenceFeriau01",
     isPrivate: false,
     context: "Projet professionnel"
@@ -71,10 +73,18 @@ function ProjectCard({ project }) {
         {/* Animated background */}
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-teal-500/5 group-hover:from-cyan-500/20 group-hover:to-teal-500/20 transition-all duration-500"></div>
 
-        {/* Icon */}
-        <div className="text-8xl group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 z-10">
-          {project.image}
-        </div>
+        {/* Image ou Icon */}
+        {project.isImage ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 z-10"
+          />
+        ) : (
+          <div className="text-8xl group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 z-10">
+            {project.image}
+          </div>
+        )}
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent opacity-80"></div>

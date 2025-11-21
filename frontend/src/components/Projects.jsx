@@ -18,9 +18,9 @@ const projectsData = [
     technologies: ["React", "Java", "Spring Boot", "MySQL"],
     image: "/materlait.png", // Image du projet
     isImage: true,
-    github: "https://github.com/MaxenceFeriau01",
-    isPrivate: false,
-    context: "Projet professionnel"
+    github: null, // Projet privé (entreprise)
+    isPrivate: true,
+    context: "Stage AKKODIS"
   },
   {
     id: 3,
@@ -75,11 +75,13 @@ function ProjectCard({ project }) {
 
         {/* Image ou Icon */}
         {project.isImage ? (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 z-10"
-          />
+          <div className="w-full h-full p-6 flex items-center justify-center z-10">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="max-w-full max-h-full object-contain rounded-lg group-hover:scale-105 transition-all duration-500 shadow-lg"
+            />
+          </div>
         ) : (
           <div className="text-8xl group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 z-10">
             {project.image}

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 // Import des composants
 import Navigation from './components/Navigation'
@@ -13,20 +12,19 @@ import Footer from './components/Footer'
 import Terminal from './components/Terminal'
 
 function App() {
-  const [projects, setProjects] = useState([])
-  const [loading, setLoading] = useState(true)
   const [terminalMode, setTerminalMode] = useState(false)
+  const [showToggle, setShowToggle] = useState(true)
 
+  // Détecter le scroll pour masquer le bouton hors de la page d'accueil
   useEffect(() => {
-    axios.get('http://localhost:5000/api/projects')
-      .then(response => {
-        setProjects(response.data)
-        setLoading(false)
-      })
-      .catch(error => {
-        console.error('Erreur:', error)
-        setLoading(false)
-      })
+    const handleScroll = () => {
+      // Masquer le bouton si on scroll au-delà de la hauteur de la fenêtre (section Hero)
+      const heroHeight = window.innerHeight
+      setShowToggle(window.scrollY < heroHeight - 100)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToSection = (sectionId) => {
@@ -38,11 +36,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#0a1628] text-white relative">
-      {/* Toggle Button - Fixed Position */}
-      <button
-        onClick={() => setTerminalMode(!terminalMode)}
-        className="fixed top-24 right-6 z-[100] flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 px-6 py-3 rounded-full text-white font-semibold shadow-xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all hover:scale-105 border-2 border-cyan-400/30"
-      >
+      {/* Toggle Button - Visible uniquement sur la page d'accueil */}
+      {(showToggle || terminalMode) && (
+        <button
+          onClick={() => setTerminalMode(!terminalMode)}
+          className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500 px-6 py-3 rounded-full text-white font-semibold shadow-xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all hover:scale-105 border-2 border-cyan-400/30"
+        >
         {terminalMode ? (
           <>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,7 +58,8 @@ function App() {
             <span>Mode Terminal</span>
           </>
         )}
-      </button>
+        </button>
+      )}
 
       {/* Terminal Mode */}
       {terminalMode ? (
@@ -72,7 +72,7 @@ function App() {
           <Hero scrollToSection={scrollToSection} />
           <About />
           <Skills />
-          <Projects projects={projects} loading={loading} />
+          <Projects />
           <Contact />
           <Footer />
         </>

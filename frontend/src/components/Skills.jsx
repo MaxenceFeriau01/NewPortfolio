@@ -42,6 +42,8 @@ const skillsData = {
     color: "teal",
     skills: [
       { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "Portainer", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg" },
+      { name: "Proxmox", logo: "https://www.proxmox.com/images/proxmox/Proxmox_symbol_standard_hex.png" },
       { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
       { name: "Azure DevOps", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" },
@@ -49,6 +51,7 @@ const skillsData = {
       { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
       { name: "IntelliJ", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
       { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+      { name: "Claude AI", logo: "/claude-ai.svg" },
     ]
   }
 }
@@ -186,7 +189,7 @@ function Skills() {
             Stack Technique
           </h2>
           <p className="text-gray-400 text-xl max-w-2xl mx-auto">
-            Les technologies et outils que je maîtrise pour créer des applications modernes
+            Les technologies et outils avec lesquels je travaille au quotidien
           </p>
         </div>
 

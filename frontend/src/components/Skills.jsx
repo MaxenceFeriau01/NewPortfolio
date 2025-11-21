@@ -51,6 +51,7 @@ const skillsData = {
       { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
       { name: "IntelliJ", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
       { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+      { name: "Claude AI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Claude_AI_logo.svg/1024px-Claude_AI_logo.svg.png" },
     ]
   }
 }
